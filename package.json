@@ -1,0 +1,26 @@
+{
+  "name": "react-native-typescript-library-starter",
+  "version": "0.0.1",
+  "description": "WIP",
+  "main": "index.tsx",
+  "repository": "git@github.com:WrathChaos/react-native-typescript-library-starter.git",
+  "author": "FreakyCoder <kurayogun@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://www.freakycoder.com",
+  "bugs": "https://github.com/WrathChaos/react-native-typescript-library-starter/issues",
+  "keywords": [
+    "FreakyCoder",
+    "freakycoder",
+    "kuray",
+    "Kuray",
+    "react",
+    "react-native",
+    "javascript",
+    "ui-lib",
+    "rn"
+  ],
+  "peerDependencies": {
+    "react": ">= 16.x.x",
+    "react-native": ">= 0.55.x"
+  }
+}
