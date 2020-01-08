@@ -20,6 +20,13 @@
         src="assets/Screenshots/JSLibraryBoilerplate.png" />
 </p>
 
+
+### Do not forget
+
+```js
+npm i -D @types/react @types/react-native
+```
+
 # Installation
 
 Add the dependency:
