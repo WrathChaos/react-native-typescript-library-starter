@@ -1,6 +1,8 @@
 <img alt="React Native Library Boilerplate" src="assets/logo.png" width="1050"/>
 
 
+# WORK IN PROGRESS ! DO NOT USE THIS LIBRARY FOR NOW !
+
 [![Battle Tested ✅](https://img.shields.io/badge/-Battle--Tested%20%E2%9C%85-03666e?style=for-the-badge)](https://github.com/WrathChaos/react-native-library-boilerplate)
 
 
