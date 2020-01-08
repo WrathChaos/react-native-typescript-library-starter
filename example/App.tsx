@@ -1,22 +1,22 @@
 import React from "react";
 import {
-  SafeAreaView,
+  View,
+  StatusBar,
   StyleSheet,
   ScrollView,
-  View,
-  Text as RNText,
-  StatusBar
+  SafeAreaView
 } from "react-native";
 
 import {
   Header,
-  LearnMoreLinks,
   Colors,
+  LearnMoreLinks,
   DebugInstructions,
   ReloadInstructions
 } from "react-native/Libraries/NewAppScreen";
 
 import Text from "./lib/StatefulComponent/Text";
+import { Hello } from "./lib/FunctionalComponent/Hello";
 
 declare var global: { HermesInternal: null | {} };
 
@@ -46,25 +46,31 @@ const App = () => {
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
+              <Text size="XL" bold style={styles.sectionTitle}>
+                See Your Changes
+              </Text>
               <Text style={styles.sectionDescription}>
                 <ReloadInstructions />
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
+              <Text size="XL" bold style={styles.sectionTitle}>
+                Debug
+              </Text>
               <Text style={styles.sectionDescription}>
                 <DebugInstructions />
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text size="XL" bold style={styles.sectionTitle}>
+                Learn More
+              </Text>
               <Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
               </Text>
             </View>
-            <LearnMoreLinks />
           </View>
+          <Hello name="Test" enthusiasmLevel={5} />
         </ScrollView>
       </SafeAreaView>
     </>
