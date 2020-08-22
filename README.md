@@ -12,7 +12,7 @@
 
 <p align="center">
   <img alt="React Native Typescript Library Boilerplate"
-        src="assets/Screenshots/typescript.png" />
+        src="assets/Screenshots/typescript.jpg" />
 </p>
 
 ## Library Usage
