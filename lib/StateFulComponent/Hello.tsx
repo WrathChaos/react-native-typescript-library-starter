@@ -3,30 +3,27 @@ import { Button, StyleSheet, Text, View } from "react-native";
 
 export interface Props {
   name: string;
-  enthusiasmLevel?: number;
+  intelligenceLevel?: number;
 }
 
 interface State {
-  enthusiasmLevel: number;
+  intelligenceLevel: number;
 }
 
 export class Hello extends React.Component<Props, State> {
   constructor(props: Props) {
     super(props);
-
-    if ((props.enthusiasmLevel || 0) <= 0) {
-      throw new Error("You could be a little more enthusiastic. :D");
-    }
-
     this.state = {
-      enthusiasmLevel: props.enthusiasmLevel || 1
+      intelligenceLevel: props.intelligenceLevel || 1,
     };
   }
 
   onIncrement = () =>
-    this.setState({ enthusiasmLevel: this.state.enthusiasmLevel + 1 });
+    this.setState({ intelligenceLevel: this.state.intelligenceLevel + 1 });
+
   onDecrement = () =>
-    this.setState({ enthusiasmLevel: this.state.enthusiasmLevel - 1 });
+    this.setState({ intelligenceLevel: this.state.intelligenceLevel - 1 });
+
   getExclamationMarks = (numChars: number) => Array(numChars + 1).join("!");
 
   render() {
@@ -35,7 +32,7 @@ export class Hello extends React.Component<Props, State> {
         <Text style={styles.greeting}>
           Hello{" "}
           {this.props.name +
-            this.getExclamationMarks(this.state.enthusiasmLevel)}
+            this.getExclamationMarks(this.state.intelligenceLevel)}
         </Text>
 
         <View style={styles.buttons}>
@@ -66,21 +63,21 @@ export class Hello extends React.Component<Props, State> {
 const styles = StyleSheet.create({
   root: {
     alignItems: "center",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   buttons: {
     flexDirection: "row",
     minHeight: 70,
     alignItems: "stretch",
     alignSelf: "center",
-    borderWidth: 5
+    borderWidth: 5,
   },
   button: {
     flex: 1,
-    paddingVertical: 0
+    paddingVertical: 0,
   },
   greeting: {
     color: "#999",
-    fontWeight: "bold"
-  }
+    fontWeight: "bold",
+  },
 });
