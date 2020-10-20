@@ -68,6 +68,17 @@ import MyComponent from "react-native-typescript-library-starter";
 <MyComponent />
 ```
 
+## Example Project 😍
+
+You can checkout the example project 🥰
+
+Simply run
+
+- `npm i`
+- `react-native run-ios/android`
+
+should work of the example project.
+
 # Configuration - Props
 
 | Property |  Type   | Default | Description                                             |
