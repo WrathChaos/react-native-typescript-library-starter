@@ -81,12 +81,23 @@ should work of the example project.
 
 # Configuration - Props
 
-| Property |  Type   | Default | Description                                             |
-| -------- | :-----: | :-----: | ------------------------------------------------------- |
-| outline  | boolean |  true   | make the button outline                                 |
-| solid    | boolean |  false  | make the button with a solid background and a shadow    |
-| gradient | boolean |  false  | make the button with a gradient background and a shadow |
-| width    | number  |   150   | change the button's width                               |
+## Fundamentals
+
+| Property    |  Type  |  Default  | Description           |
+| ----------- | :----: | :-------: | --------------------- |
+| title       | string | undefined | change the title      |
+| description | string | undefined | change the descrition |
+
+## Customization (Optionals)
+
+| Property       |   Type    |  Default  | Description                                                            |
+| -------------- | :-------: | :-------: | ---------------------------------------------------------------------- |
+| enableButton   |  boolean  |   false   | let you enable the button (must use it for button)                     |
+| onPress        | function  | undefined | set your own logic for the button functionality when it is pressed     |
+| buttonText     |  string   | undefined | change the button's text                                               |
+| style          | ViewStyle |  default  | set or override the style object for the main container                |
+| buttonStyle    | ViewStyle |  default  | set or override the style object for the button style                  |
+| ImageComponent |   Image   |  default  | set your own component instead of default react-native Image component |
 
 ## Future Plans
 
