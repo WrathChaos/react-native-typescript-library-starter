@@ -19,13 +19,6 @@
     "ui-lib",
     "rn"
   ],
-  "scripts": {
-    "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
   "peerDependencies": {
     "react": ">= 16.x.x",
     "react-native": ">=0.63.x"
@@ -45,9 +38,16 @@
     "react-native-typescript-transformer": "^1.2.13",
     "typescript": "^4.0.3"
   },
+  "scripts": {
+    "build": "cd lib && tsc && cp ../package.json ../build/dist/ && Echo Build completed!",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "prepare": "husky install"
+  },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint --config .commitlintrc.json -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged",
       "post-merge": "post-npm-install"
     }
