@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-library-starter",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Extremely easy to create a React Native Component Library with both Stateful and Functional Component Examples.",
   "main": "./build/dist/index.js",
   "repository": "git@github.com:WrathChaos/react-native-typescript-library-starter.git",
@@ -35,6 +35,7 @@
     "lint-staged": "^10.4.2",
     "npm-post-install": "0.0.2",
     "prettier": "^2.1.2",
+    "prettier-format": "^3.0.3",
     "react-native-typescript-transformer": "^1.2.13",
     "typescript": "^4.0.3"
   },
@@ -48,7 +49,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "npm run prettier-format && npm run lint && lint-staged",
       "post-merge": "post-npm-install"
     }
   },
