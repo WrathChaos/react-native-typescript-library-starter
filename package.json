@@ -44,8 +44,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
-    "prepare": "husky install"
+    "postversion": "git push && git push --tags"
   },
   "husky": {
     "hooks": {
