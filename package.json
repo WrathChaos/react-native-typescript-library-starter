@@ -45,7 +45,7 @@
     "lint": "tslint -p tsconfig.json",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "prettier": "cd src && npx prettier --write . && git add .",
+    "prettier": "cd lib && npx prettier --write . && git add .",
     "prepare": "husky install",
     "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier",
     "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
