@@ -18,6 +18,7 @@
 ## Library Usage
 
 - `npm i`
+- `npm run husky:setup`
 - Delete example folder
 - Delete build folder
 - Make your own library into the `lib` folder
