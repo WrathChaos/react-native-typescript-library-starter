@@ -3,5 +3,5 @@ export default {
   M: 14,
   L: 16,
   XL: 22,
-  XXL: 28
+  XXL: 28,
 };

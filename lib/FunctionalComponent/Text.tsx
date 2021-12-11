@@ -30,7 +30,7 @@ const Text = ({
       ...style,
       fontSize: checkSize(size),
       fontWeight: bold ? "700" : "400",
-      color: color || "black"
+      color: color || "black",
     }}
   >
     {children}
