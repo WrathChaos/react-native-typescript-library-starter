@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: "@react-native-community",
   parser: "@typescript-eslint/parser",
-  plugins: ["import", "eslint-plugin-import", "@typescript-eslint"],
+  plugins: ["import", "eslint-plugin-import", "@typescript-eslint", "prettier"],
   settings: {
     "import/resolver": {
       node: {
@@ -36,9 +36,22 @@ module.exports = {
         avoidEscape: true,
       },
     ],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        svg: "always",
+        model: "always",
+        style: "always",
+        png: "always",
+        jpg: "always",
+        json: "always",
+        constant: "always",
+      },
+    ],
     "max-len": ["error", 120],
     "@typescript-eslint/ban-ts-comment": 2,
-    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/no-explicit-any": 1,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react-native/no-unused-styles": 2,
@@ -49,7 +62,7 @@ module.exports = {
     "import/no-extraneous-dependencies": 2,
     "import/extensions": ["error", "never", { svg: "always" }],
     "import/no-named-as-default-member": 2,
-    "import/order": ["error", { "newlines-between": "always" }],
+    "import/order": 0,
     "import/no-duplicates": 2,
     "import/no-useless-path-segments": 2,
     "import/no-cycle": 2,
@@ -73,5 +86,17 @@ module.exports = {
     camelcase: 2,
     "prefer-destructuring": 2,
     "no-nested-ternary": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
   },
 };
