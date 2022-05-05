@@ -47,8 +47,9 @@
     "postversion": "git push && git push --tags",
     "prettier": "cd lib && npx prettier --write . && git add .",
     "prepare": "husky install",
-    "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier",
+    "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier && npm run husky:lint",
     "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
-    "husky:prettier": "npx husky add .husky/pre-commit 'npm run prettier'"
+    "husky:prettier": "npx husky set .husky/pre-commit 'npm run prettier'",
+    "husky:lint": "npx husky add .husky/pre-commit 'npm run lint'"
   }
 }
