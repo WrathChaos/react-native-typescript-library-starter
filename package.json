@@ -19,18 +19,14 @@
     "ui-lib",
     "rn"
   ],
-  "peerDependencies": {
-    "react": ">= 16.x.x",
-    "react-native": ">=0.63.x"
-  },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/react": "^16.9.53",
     "@types/react-native": "^0.63.25",
-    "eslint": "^7.11.0",
     "cpx": "^1.5.0",
+    "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.0",
     "husky": "^8.0.0",
     "lint-staged": "^10.4.2",
@@ -38,6 +34,7 @@
     "prettier": "^2.1.2",
     "prettier-format": "^3.0.3",
     "react-native-typescript-transformer": "^1.2.13",
+    "semantic-release": "^19.0.5",
     "typescript": "^4.0.3"
   },
   "scripts": {
@@ -53,5 +50,5 @@
     "copy:package": "cpx '../package.json' '../build/dist/'",
     "husky:lint": "npx husky add .husky/pre-commit 'npm run lint'",
     "husky:prettier": "npx husky set .husky/pre-commit 'npm run prettier'"
-  },
+  }
 }
