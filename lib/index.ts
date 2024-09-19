@@ -1,4 +1,1 @@
-import Text from "./FunctionalComponent/Text";
-import { Hello } from "./StateFulComponent/Hello";
-
-export { Text, Hello };
+// Your main export will be here
