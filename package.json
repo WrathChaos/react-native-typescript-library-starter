@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-library-starter",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Extremely easy to create a React Native Component Library with both Stateful and Functional Component Examples.",
   "main": "./build/dist/index.js",
   "repository": "git@github.com:WrathChaos/react-native-typescript-library-starter.git",
@@ -26,10 +26,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json && npm run copy:assets && npm run copy:package",
     "prepare": "husky install",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
-    "lint": "eslint \"lib/**/*.{ts,tsx,js,jsx}\"",
-    "prettier": "npx prettier --write . && git add .",
-    "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier && npm run husky:lint",
+    "lint": "node scripts/terminal/lint.mjs",
+    "prettier": "node scripts/terminal/prettier.mjs",    "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier && npm run husky:lint",
     "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
     "semantic-release": "semantic-release",
     "copy:assets": "cpx 'lib/local-assets/**' 'build/dist/local-assets'",
